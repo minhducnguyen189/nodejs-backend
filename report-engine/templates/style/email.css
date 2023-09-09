@@ -1,0 +1,9 @@
+.content {
+    margin-top: 30px;
+    border: 2px solid green;
+    padding: 30px;
+}
+
+.row {
+    justify-content: center;
+}
