@@ -3,16 +3,16 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-6 content">
-            <p>Hi {{recipientName}},</p>
+            <p>Hi {{recipientName }}{{^recipientName }}{recipientName}{{/recipientName }},</p>
             <p>Thank you for sending me your email for the {{jobRole}} position.</p>
             <p>
-                The deadline for all applications is {{deadlineDate}}. After this date,
+                The deadline for all applications is {{deadlineDate}}{{^deadlineDate}}{deadlineDate}{{/deadlineDate}}. After this date,
                 we will review all CVs and contact those who have been successful at
                 getting through to the next stage.
             </p>
             <p>We will be in touch with an update in due course. </p>
             <p>Many thanks,</p>
-            <p>{{senderName}}</p>
+            <p>{{senderName}}{{^senderName}}{senderName}{{/senderName}}</p>
         </div>
     </div>
 </div>
